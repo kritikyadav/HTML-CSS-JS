@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2>This is HTML form</h2>
+    <form action="beckend.php">
+
+        <div>
+            <label for="name">Name</label> <input type="text" name="myname" id="name">
+        </div>
+
+        <div>
+            <label for="role">Role</label> <input type="text" name="myrole" id="role">
+        </div>
+        <div>
+            <label for="section">Section</label> <input type="text" name="myscetion" id="section">
+        </div>
+        <div>
+            <label for="email">Email</label> <input type="email" name="myemail" id="email">
+        </div>
+        <div>
+            <label for="date">Date</label> <input type="date" name="mydate" id="date">
+        </div>
+        <div>
+            <label for="number">Number</label> <input type="number" name="mynumber" id="number">
+        </div>
+        <div>
+            <label for="eligiblity">Are You Elegible</label> <input type="checkbox" name="myeligibility"
+                id="eligiblity">
+        </div>
+        <div>
+            Gander:- <label for="male">Male</label><input type="radio" name="mygender" id="male"> <label
+                for="female">Female</label><input type="radio" name="mygender" id="female"> <label
+                for="others">Others</label><input type="radio" name="mygender" id="others">
+        </div>
+        <div>
+            <p><label for="about">Write About Yourself :-</label></p><textarea name="mytext" cols="80" rows="5"
+                id="about"> </textarea>
+        </div>
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <option value="ind">Indica</option>
+                <option value="ind">Verna</option>
+                <option value="ind">City</option>
+                <option value="ind">Dezire</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now"> <input type="reset" value="Reset Now">
+        </div>
+
+    </form>
+</body>
+</html>
