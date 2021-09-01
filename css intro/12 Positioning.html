@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        /* position: static(default), absolute, relative, fixed, sticky */
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+            height: 4000px;
+        }
+
+        /* relative is to change its position from its normal position */
+        /* position: relative; */
+        /* position: absolute; */
+        /* top: 34px; */
+        /* left: 30px; */
+
+        /* absolute changes its position relative to its parent/starting position */
+        /* position: absolute; */
+        /* #box3{
+            position: absolute;
+            top: 34px;
+            left: 34px;   
+        } */
+        /* position: fixed; is used to fix its position even while scroling its position does not change */
+        
+        #box3{
+            position: sticky;
+            top: 3px;
+        }
+        /* position: sticky; it sticks when its position is fixed to that place and do not change its position */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat With Us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
