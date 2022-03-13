@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive, Size Units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            /* width: 400px; */
+            /* height: 344px; */
+            /* for making a responsive web site height and width 
+            should be taken accourding to the size of the screen on which the web site is 
+            working therefor the vh and vm is used here */
+            /* vh gives the container size acc. to the screen used */
+            /* vw gives width acc. to width of screen used */
+            width: 100vw; /*100% width of screen*/
+            height: 100vh; /*100% height of screen*/
+
+            font-size: 10px;
+            border: 2px solid red;
+
+        }
+        h1{
+            text-align: center;
+
+        }
+        #first{
+            font-size: 3em; /* em adjusts by taking refference from its parent container */
+            padding: 3em; /* if pading is set then it takes refference from the font size mentioned */ 
+
+        }
+        #second{
+            font-size: 3rem; /* while the rem takes refference from the main html font size */
+            padding: 3rem; /* even padding also takes reff. from the same html font size mentioned */
+        }
+        #third{}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is First heading</h1>
+        <h1 id="second">This is Second heading</h1>
+        <h1 id="third">This is Third heading</h1>
+    </div>
+</body>
+
+</html>

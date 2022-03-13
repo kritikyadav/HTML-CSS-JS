@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Tutorial</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* To create a flex box just set container display to flex */
+            display: flex;
+            /* Flex properties for flex container */
+            flex-direction: row ; /* by default */
+            /* flex-direction: column ;
+            flex-direction: column-reverse; 
+            flex-direction: row-reverse; */
+            flex-wrap: wrap;
+            /* wrap is to make it responsive within the container */
+            /* flex-wrap: wrap-reverse; is to reverse wrap down to up */
+            /* flex-flow: row-reverse wrap; using both at a time flex dir, and wrap */
+            /* justify-content: center; will bring at center horizontaly */
+            justify-content: space-between; /* will give space in between start and end no space*/
+            /* justify-content: space-evenly; every gay is equal start and end as well */
+            /* justify-content: space-around; every gap is equal but start and end have half less gap */
+            align-items: center;/* verticaly center */
+            /* align-items: flex-end; at last of container */
+            /* align-items: flex-start; at start of sontainer */
+            /* align-items: stretch; evenly space creation */
+
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item1{
+            /* flex properties for a flex item */
+            /* order: 20; higher the order later it shows or its position is later */
+            /* flex-grow: 0; inncrese size of block with screen*/
+            flex-basis: 260px; 
+            /* flex-basis is used to control width of block if flex direction is row 
+            or control height if flex direction is column */
+
+        }
+        #item2{
+            /* flex-grow: 3; */
+            /* to decerese box size we can use flex-shrink: 1; */
+            /* flex-shrink: 3; */
+        }
+        #item3{
+            /* flex-grow: 1; */
+            flex: 2 2 230px; /* flex: grow shrink basis */
+            align-self: flex-end; /* to align single block */
+            /* align-self: flex-start; */
+            /* align-self: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item1">Frist box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <div class="item" id="item4">Forth box</div>
+        <div class="item" id="item5">Fifth box</div>
+        <div class="item" id="item6">Sixth box</div>
+    </div>
+</body>
+
+</html>
